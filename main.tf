@@ -57,7 +57,7 @@ resource "aws_instance" "four" {
   instance_type   = "t3.micro"
   key_name        = "hanvika"
   vpc_security_group_ids = [aws_security_group.five.id]
-  availability_zone = "eu-north-1a"
+  availability_zone = "eu-north-1b"
   tags = {
     Name = "app-server-2"
   }
