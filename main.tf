@@ -6,7 +6,7 @@ region = "eu-north-1"
 resource "aws_instance" "one" {
   ami             = "ami-0b0d560d43e65a601"
   instance_type   = "t3.micro"
-  key_name        = "hanvika"
+  key_name        = "docker"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "eu-north-1a"
   user_data       = <<EOF
@@ -25,7 +25,7 @@ EOF
 resource "aws_instance" "two" {
   ami             = "ami-0b0d560d43e65a601"
   instance_type   = "t3.micro"
-  key_name        = "hanvika"
+  key_name        = "docker"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "eu-north-1b"
   user_data       = <<EOF
@@ -44,7 +44,7 @@ EOF
 resource "aws_instance" "three" {
   ami             = "ami-0b0d560d43e65a601"
   instance_type   = "t3.micro"
-  key_name        = "hanvika"
+  key_name        = "docker"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "eu-north-1a"
   tags = {
@@ -55,7 +55,7 @@ resource "aws_instance" "three" {
 resource "aws_instance" "four" {
   ami             = "ami-0b0d560d43e65a601"
   instance_type   = "t3.micro"
-  key_name        = "hanvika"
+  key_name        = "docker"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "eu-north-1b"
   tags = {
